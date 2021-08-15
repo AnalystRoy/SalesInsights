@@ -31,9 +31,28 @@ FROM markets`
 
 ![markets](https://user-images.githubusercontent.com/88250882/129489394-5ebc1019-b529-4453-8a29-2caf269c4441.png)
 
-We find that except two rows which have been highlighted all of them are Indian States in the `markets_name` column and each market has been assigned a code and a zone
+We find that except two rows which have been highlighted all of the markets are Indian States in the `markets_name` column and each market has been assigned a code and a zone
+
 
 4) We try to find out the maximum sales amount using the `MAX()` function
+
+`SELECT max(sales_qty) AS Maximum_amount FROM transactions
+`
+
+![maxm1](https://user-images.githubusercontent.com/88250882/129492279-b7f6db17-40ae-49f7-9294-524473f84f5a.png)
+
+
+
+and then using the maximum sales amount we figure out the details like `customer_code`, `product_code`, `market_code` etc
+
+`SELECT *
+FROM transactions
+WHERE sales_amount = 1510944`
+
+
+![image](https://user-images.githubusercontent.com/88250882/129492360-7c51f3f4-ac96-4f9b-abfc-ba2ad755eea4.png)
+
+# From here we can conclude dat `Delhi NCR` which has a market code `Mark004` has the highest sales amount
 
 
 
