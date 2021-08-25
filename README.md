@@ -55,22 +55,5 @@ WHERE sales_amount = 1510944`
 #### From here we can conclude that `Delhi NCR` which has a market code `Mark004` has the highest sales amount ![image](https://user-images.githubusercontent.com/88250882/129492772-3009eb0e-0fea-428d-a525-561c854e5cbf.png)
 
 
-6) We repeat the following query to find out which market has the maximum sales quantity
-
-`SELECT max(sales_qty)
-FROM transactions`
-
-![image](https://user-images.githubusercontent.com/88250882/129492945-a7a3236c-e333-47a6-993a-ca887a6dc533.png)
-
-`SELECT *
-FROM transactions
-WHERE sales_qty = 14049`
-
-![image](https://user-images.githubusercontent.com/88250882/129492993-aa233a50-e4c5-463d-85bc-10129763b591.png)
-
-
-#### Kochi, which has the Market code of Mark010 has the highest sales quantity
-
-![image](https://user-images.githubusercontent.com/88250882/129493028-2cfeef8d-e319-4acd-b02e-5bddd1564b00.png)
 
 
